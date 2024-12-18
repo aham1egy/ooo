@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ConnectHub</title>
+</head>
+<body>
+    <header>
+        <h1>ConnectHub</h1>
+        <div class="header-buttons">
+            <button class="header-button" title="الإعدادات" onclick="openSettings()">
+                <i class="fas fa-cog"></i>
+            </button>
+            
+            <button class="header-button" title="الإشعارات" onclick="openNotifications()">
+                <i class="fas fa-bell"></i>
+            
+            </button>
+            <button class="header-button" title="الوضع الداكن" onclick="toggleDarkMode()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    
+    <div class="story-bar">
+        <div class="story">
+            <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد انور</p>
+        </div>
+        <div class="story">
+            <img src="https://i.top4top.io/p_3184n7h462.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد احمد</p>
+        </div>
+        <div class="story">
+            <img src="https://i.top4top.io/p_3184n7h462.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد احمد</p>
+        </div>
+        <div class="story">
+            <img src="https://i.top4top.io/p_3184n7h462.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد احمد</p>
+        </div>
+        <div class="story">
+            <img src="https://i.top4top.io/p_3184n7h462.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد احمد</p>
+        </div>
+        <div class="story">
+            <img src="https://i.top4top.io/p_3184n7h462.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد احمد</p>
+         </div>
+        <div class="story">
+            <img src="https://i.top4top.io/p_3184n7h462.png" alt="صورة المستخدم" class="story-image">
+            <p class="username">محمد احمد</p>
+        </div>
+        <div class="story">
+            <img src="https://j.top4top.io/p_31848x6vg3.jpg" alt="صورة المستخدم" class="story-image">
+            <p class="username">نور الدين</p>
+        </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+        <input type="text" placeholder="بحث..." />
+    </div>
+    
+    
+    <div class="feed">
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة البوست" class="post-image">
+                <p class="post-description">"وأجعلنيّ خيراً لِنفّسي ولِمن حوليّ يا الله.".💛</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://j.top4top.io/p_318414d3b3.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">إفتح يا جدع متقلقش هنشرب كاسين مع بعض بس فيه ايه</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://f.top4top.io/p_3184o2kio1.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">لما حبيبتك تكون فاهمه دماغك 
+                    بتبقى علاقه عنب 😂
+                    </p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://k.top4top.io/p_3184svkz74.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description"></p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://i.top4top.io/p_3184lapcm2.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">15 سنة ازاي يا ماما</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://h.top4top.io/p_3184ldude1.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description"></p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://f.top4top.io/p_31848gsgh9.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">قابل ياعم😂🌚</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://j.top4top.io/p_3184f69db1.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">من الاخر</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://l.top4top.io/p_31844006r3.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">لما ابقي ساكن في الارياف بس ولا عندنا فدانين ارض ولا بقرة ولا معزتين حتي :
+                </p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة البوست" class="post-image">
+                <p class="post-description">"وأجعلنيّ خيراً لِنفّسي ولِمن حوليّ يا الله.".💛</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://a.top4top.io/p_3184nasqy4.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">كل دول و لسه الكراش مشافهاش 🥺💔
+                </p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://k.top4top.io/p_3184s3wwj2.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">محطة مترو السدات بقت غريبة الايام دي</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://g.top4top.io/p_31849olcl10.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">احلا برج ده ولا اي</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://e.top4top.io/p_3184i9r9a8.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description">ما خلاص يا سوزي عرفنا انك متتعوضيش </p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://d.top4top.io/p_3184dam6p7.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description"> حمو بيكا في امريكا</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="https://h.top4top.io/p_3184b0la01.png" alt="صورة المستخدم" class="profile-pic">
+                <div class="user-info">
+                    <h3>Mó_hàmé_d Á_ńwà_r official❣️💛</h3>
+                    <p>19-9-2024</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="https://c.top4top.io/p_3184ss8h16.jpg" alt="صورة البوست" class="post-image">
+                <p class="post-description"> </p>
+            </div>
+            <div class="post-actions">
+                <button class="action-button"><i class="fas fa-heart"></i> إعجاب</button>
+                <button class="action-button"><i class="fas fa-reply"></i> رد</button>
+                <button class="action-button"><i class="fas fa-share"></i> مشاركة</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-bar">
+        <button class="bottom-button" onclick="goToCamera()" title="الكاميرا">
+            <i class="fas fa-camera"></i>
+        </button>
+        <button class="bottom-button" onclick="goToHome()" title="الصفحة الرئيسية">
+            <i class="fas fa-home"></i>
+        </button>
+        <button class="bottom-button" onclick="goToChat()" title="الدردشات">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <img src="user-profile.jpg" alt="صورة المستخدم" class="profile-pic">
+            <h2>تعديل المعلومات</h2>
+            <input type="text" id="name" placeholder="الاسم" required>
+            <input type="number" id="age" placeholder="السن" required>
+            <textarea id="bio" placeholder="البيو" rows="4"></textarea>
+            <div class="button-group">
+                <button onclick="saveSettings()">حفظ التغييرات</button>
+                <button onclick="closeSettings()">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_home.js"></script>
+</body>
+</html>

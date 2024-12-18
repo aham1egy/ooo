@@ -1,0 +1,347 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea; /* اللون الفاتح */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* إخفاء شريط التمرير */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 14px; /* حجم أصغر لاسم التطبيق */
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.header-button:hover {
+    transform: scale(1.1);
+}
+
+.story-bar {
+    display: flex;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 5px; /* زوايا مستديرة */
+    overflow-x: auto;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    width: 50px; /* عرض صغير لمربعات الستوري */
+}
+
+.story-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #25D366;
+}
+
+.username {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #333; /* لون الخط في الوضع الفاتح */
+    text-align: center; /* محاذاة للنص في الوضع العادي */
+}
+
+.search-bar {
+    display: none; /* مخفي بشكل افتراضي */
+    position: fixed; /* ثابت */
+    top: 50px; /* مكانه تحت شريط الحالة */
+    left: 10px;
+    right: 10px;
+    background-color: #fff; /* خلفية بيضاء */
+    border-radius: 20px; /* زوايا مستديرة */
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* تأثير الانتقال */
+}
+
+.search-bar input {
+    width: 100%; /* عرض كامل */
+    border: none; /* بدون حدود */
+    outline: none; /* بدون تأثير عند التركيز */
+    padding: 5px;
+    border-radius: 20px; /* زوايا مستديرة */
+    font-size: 16px;
+}
+
+.dark-mode .search-bar {
+    background-color: #444; /* خلفية في الوضع الداكن */
+    color: #fff; /* نص أبيض */
+}
+
+
+
+.feed {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    margin-bottom: 50px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.feed::-webkit-scrollbar {
+    display: none; /* إخفاء شريط التمرير */
+}
+
+.post {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.user-info {
+    margin-left: 10px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.post-content {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-button:hover {
+    background-color: #1e8e57;
+    transform: scale(1.05);
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    background-color: #fff; /* اللون في الوضع العادي */
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dark-mode .bottom-bar {
+    background-color: #444; /* لون الشريط السفلي في الوضع الداكن */
+    border-top: 1px solid #555; /* لون الحدود في الوضع الداكن */
+}
+
+.dark-mode .bottom-button {
+    color: #25D366; /* لون الأيقونات في الوضع الداكن */
+}
+
+.dark-mode .header-button {
+    color: #25D366; /* لون الأيقونات في شريط العنوان في الوضع الداكن */
+}
+.bottom-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #25D366; /* اللون في الوضع العادي */
+    font-size: 24px;
+}
+
+.bottom-button:hover {
+    transform: scale(1.1);
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode .story-bar {
+    background-color: #444; /* لون خلفية شريط الستوري في الوضع الداكن */
+}
+
+.dark-mode .username {
+    color: #fff; /* لون الخط في شريط الستوري في الوضع الداكن */
+}
+
+.dark-mode .feed {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode .user-info h3 {
+    color: #fff;
+}
+
+.dark-mode .user-info p {
+    color: #bbb;
+}
+
+.dark-mode .post {
+    background-color: #444; /* لون الخلفية في الوضع الداكن */
+    color: #fff; /* نص أبيض */
+}
+
+.dark-mode .post-description {
+    color: #ddd; /* لون النص في الوصف في الوضع الداكن */
+}
+
+.modal {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed; /* جعلها ثابتة */
+    z-index: 1001; /* أعلى من باقي العناصر */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* يسمح بالتمرير */
+    background-color: rgba(0, 0, 0, 0.4); /* خلفية شفافة */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* مركز في الصفحة */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* عرض النافذة */
+    max-width: 400px; /* الحد الأقصى للعرض */
+    border-radius: 10px; /* زوايا مستديرة */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* محاذاة العناصر في المنتصف أفقيًا */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%; /* يمكنك تغيير هذه النسبة حسب الحاجة */
+    max-width: 300px; /* تحديد الحد الأقصى للعرض */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* توزيع الأزرار */
+    width: 100%; /* عرض كامل للمجموعة */
+}
+
+button {
+    width: 48%; /* عرض الأزرار مع مساحة صغيرة بينهم */
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dark-mode .modal-content {
+    background-color: #444; /* خلفية النافذة في الوضع الداكن */
+    color: #fff; /* نص أبيض */
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="number"],
+.dark-mode textarea {
+    background-color: #555; /* خلفية حقول الإدخال في الوضع الداكن */
+    color: #fff; /* نص أبيض */
+    border: 1px solid #ddd; /* لون الحدود */
+}

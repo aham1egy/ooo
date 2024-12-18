@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    font-family: Arial, sans-serif;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px; /* أقصى عرض للصندوق */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px; /* مساحة بين العنوان والمربعات */
+}
+
+.input-group {
+    width: 100%; /* عرض المربع بالكامل */
+    display: flex;
+    flex-direction: column; /* ترتيب عمودي */
+    align-items: center; /* محاذاة في المنتصف */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px; /* الحشو */
+    margin: 10px 0; /* المسافة العلوية والسفلية */
+    border: 2px solid #ddd;
+    border-radius: 15px; /* زوايا دائرية */
+    font-size: 16px;
+    text-align: center; /* محاذاة النص في المنتصف */
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none; /* إزالة إطار التركيز الافتراضي */
+}
+
+button {
+    width: 100%; /* جعل العرض 100% ليتناسب مع مربعات الإدخال */
+    padding: 12px; /* زيادة الحشو لجعل الزر أكبر */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px; /* زوايا دائرية أصغر */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 0; /* مسافة بين الأزرار */
+    height: 50px; /* تحديد ارتفاع ثابت */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button.register {
+    background-color: #2196F3; /* لون مختلف لزر التسجيل */
+}
+
+button.register:hover {
+    background-color: #1976D2; /* لون مختلف عند التحويم */
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #4CAF50;
+    }
+    100% {
+        background-color: #66BB6A;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

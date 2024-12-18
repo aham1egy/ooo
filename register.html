@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href= "styles_log.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // منع الإرسال الافتراضي
+            alert("تم إنشاء الحساب بنجاح!");
+            window.location.href = login.html; // توجيه المستخدم إلى صفحة تسجيل الدخول
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>إنشاء حساب</h1>
+        <form onsubmit="handleSubmit(event)">
+            <div class="input-group">
+                <input type="text" placeholder="الاسم" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="اسم المستخدم" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" placeholder="رقم الهاتف مع مفتاح الدولة" required pattern="^\+\d{1,3}\d{8,}$" title="يرجى إدخال رقم هاتف صحيح يبدأ بمفتاح الدولة، مثل +20123456789">
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="البريد الإلكتروني" required>
+            </div>
+            <div class="input-group">
+                <input type="date" placeholder="تاريخ الميلاد" required>
+            </div>
+            <div class="input-group">
+                <select id="gender" required>
+                    <option value="" disabled selected>الجنس</option>
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                </select>
+            </div>
+            <button type="submit">إنشاء حساب</button>
+        </form>
+    </div>
+</body>
+</html>
